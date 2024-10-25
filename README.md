@@ -1,6 +1,6 @@
 Nessa aula:
-Aplicamos propriedades flex para:
-Alterar o eixo principal de elementos;
-Quebra de itens em linhas ou colunas;
-Aplicar espaçamento entre itens;
-Definimos as diferenças entre display flex e inline-flex.
+Aprendemos uma nova propriedade flex, align-self;
+Definimos as diferenças entre flex-item e flex-container;
+Aprendemos como utilizar pseudo-classes;
+Concluímos o menu para mobile;
+Concluímos o menu para tablets.
