@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Vídeos da sessão vídeos:
 
         <li class="videos__item">
@@ -179,3 +180,11 @@ Vídeos da sessão vídeos:
                 <p>2,3 mil visualizações - Há 2 dias</p>
             </div>
         </li>
+=======
+Nessa aula:
+Inserimos vídeos no projeto;
+Aprendemos como utilizar grid e flexbox em conjunto;
+Ajustamos os vídeos com a propriedade flex-grow;
+Aprendemos como utilizar a propriedade flex-shrink;
+Finalizamos o projeto do curso.
+>>>>>>> 5f9250b65115ee0ffa2d2f82e2b7e70d1754cc8c
