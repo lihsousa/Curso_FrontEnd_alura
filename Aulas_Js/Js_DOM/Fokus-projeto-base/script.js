@@ -5,19 +5,21 @@ const longoBt = document.querySelector('.app__card-button--longo')
 const banner = document.querySelector('.app__image')
 
 focoBt.addEventListener('click', () => {
-    html.setAttribute('data-contexto', 'foco')
-    banner.setAttribute('src', '/Js_DOM/Fokus-projeto-base/imagens/foco.png')
+   alterarContexto('foco')
 })
 
 
 curtoBt.addEventListener('click' , () => {
-    html.setAttribute('data-contexto', 'descanso-curto')
-    banner.setAttribute('src', '/Js_DOM/Fokus-projeto-base/imagens/descanso-curto.png')
+  alterarContexto('descanso-curto')
 }
 )
 
 longoBt.addEventListener('click' , () => {
-    html.setAttribute('data-contexto' , 'descanso-longo')
-    banner.setAttribute('src', '/Js_DOM/Fokus-projeto-base/imagens/descanso-longo.png')
+    alterarContexto('descanso-longo')
 }
 )
+
+function alterarContexto(contexto){
+    html.setAttribute('data-contexto', contexto)
+    banner.setAttribute('src', `/Js_DOM/Fokus-projeto-base/imagens/${contexto}.png`)
+}
