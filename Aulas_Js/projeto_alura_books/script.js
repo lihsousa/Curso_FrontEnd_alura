@@ -13,8 +13,3 @@ async function buscaEndereco(cep){
         console.log(erro)
     }
 }
-let ceps =['01001000', '01001001'];
-let conjuntosCEPS = ceps.map(valores => buscaEndereco(valores));
-console.log(conjuntosCEPS);
-Promise.all(conjuntosCEPS).then(respostas => console.log(respostas));
-
