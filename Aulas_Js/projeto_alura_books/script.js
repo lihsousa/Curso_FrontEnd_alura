@@ -7,6 +7,15 @@ async function buscaEndereco(cep){
     if (consultaCEPConvertida.erro){
         throw Error ('CEP não existente!');
     }
+
+    var cidade = document.getElementById('cidade');
+    var logradouro = document.getElementById('endereco');
+    var estado = document.getElementById('estado');
+
+    cidade.value = consultaCEPConvertida.localidade;
+    logradouro.value = consultaCEPConvertida.logradouro;
+    estado.value = consultaCEPConvertida.uf;
+
     console.log(consultaCEPConvertida);
     return consultaCEPConvertida;
     }catch (erro){
@@ -18,3 +27,5 @@ let conjuntosCEPS = ceps.map(valores => buscaEndereco(valores));
 console.log(conjuntosCEPS);
 Promise.all(conjuntosCEPS).then(respostas => console.log(respostas));
 
+var cep = document.getElementById('cep');
+cep.addEventListener("focusout", () => buscaEndereco(cep.value));
