@@ -76,6 +76,7 @@
         <form class="principal__formulario" id="formulario" target="_blank"
             onsubmit="location.replace('./cadastro-finalizado.html')">
             <h3 class="principal__subtitulo">Dados pessoais</h3>
+
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="nome">Nome Completo</label>
                 <input name="nome" id="nome" class="campo__escrita" required />
@@ -101,6 +102,7 @@
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
                 <input name="cep" id="cep" class="campo__escrita" required />
+                <div id="erro"></div>
             </div>
 
             <div class="formulario__campo">
